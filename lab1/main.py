@@ -35,7 +35,7 @@ def task2():
 
 def task3():
     fi = np.arange(-1.5, 1.5, 0.01)
-    r = np.cos(2 * fi) + (np.cos(2 * fi) ** 2)
+    r = np.sqrt(np.cos(2 * fi) + np.sqrt((np.cos(2 * fi) ** 2)))
     fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
     ax.plot(r, fi)
     ax.set_rmax(1.5)
@@ -100,11 +100,11 @@ def task5_2():
     ax1.bar3d(y1, x1, z1, dx1, dy1, dz1)
     plt.show()
 
-
-task1_1()
-task1_2()
-task2()
+#
+# task1_1()
+# task1_2()
+# task2()
 task3()
-task4()
-task5_1()
-task5_2()
+# task4()
+# task5_1()
+# task5_2()

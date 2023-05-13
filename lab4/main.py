@@ -29,11 +29,7 @@ def animate(i):
     return patch,
 
 
-anim = animation.FuncAnimation(fig, animate,
-                               init_func=init,
-                               frames=360,
-                               interval=40,
-                               blit=True)
+anim = animation.FuncAnimation(fig, animate, init_func=init, frames=360, interval=40, blit=True)
 
 plt.show()
 anim.save('myAnimation.gif', writer='imagemagick', fps=30)
