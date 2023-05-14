@@ -34,10 +34,10 @@ def task2():
 
 
 def task3():
-    fi = np.arange(-1.5, 1.5, 0.01)
+    fi = np.arange(-math.pi, math.pi, 0.01)
     r = np.sqrt(np.cos(2 * fi) + np.sqrt((np.cos(2 * fi) ** 2)))
     fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
-    ax.plot(r, fi)
+    ax.plot(fi, r)
     ax.set_rmax(1.5)
     plt.show()
 
